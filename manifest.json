@@ -1,7 +1,6 @@
 {
   "title": "CodeLab title",
   "repository": "https://github.com/AdobeDocs/adobeio-codelabs-template",
-  "issues": "https://github.com/AdobeDocs/adobeio-codelabs-template/issues/new",
   "summary": "CodeLab summary",
   "navigation": [{
     "title": "Lesson 1",
