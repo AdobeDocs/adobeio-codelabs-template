@@ -14,7 +14,9 @@ The template codelab is based on the Project Helix https://www.project-helix.io/
 
 ## Share codelab URL
 
-You can visit https://[REPO_NAME]-[REPO_OWNER].project-helix.page to see it running. 
+You can visit https://[REPO_NAME]-[REPO_OWNER].project-helix.page to see it running.
+
+Demo: https://adobeio-codelabs-template-adobedocs.project-helix.page/ 
 
 Make sure to push your changes before sharing the URL.
 

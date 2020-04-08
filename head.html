@@ -1,201 +1,28 @@
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<link rel="stylesheet" href="https://unpkg.com/@adobe/coral-spectrum@4.5.7/dist/css/coral.min.css">
-<script src="https://unpkg.com/@adobe/coral-spectrum@4.5.7/dist/js/coral.min.js" data-coral-icons-external="js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/vars@2.2.0/dist/spectrum-global.css">
+
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/vars@2.2.0/dist/spectrum-medium.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/vars@2.2.0/dist/spectrum-large.css">
+
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/vars@2.2.0/dist/spectrum-lightest.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/vars@2.2.0/dist/spectrum-darkest.css">
+
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/page@2.0.6/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/typography@2.1.2/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/icon@2.1.0/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/button@2.2.0/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/table@2.0.6/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/breadcrumb@2.0.5/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/toggle@2.1.0/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/link@2.0.6/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/well@2.0.5/dist/index-vars.css">
+<link rel="stylesheet" href="https://unpkg.com/@spectrum-css/rule@2.0.6/dist/index-vars.css">
+
+<link rel="stylesheet" href="/styles/head.css">
+
+<script type="text/javascript" src="/scripts/typekit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<style>
-  .hljs {
-    display: block;
-    overflow-x: auto;
-    padding: 0.5em;
-    color: #383a42;
-    background: #fafafa;
-  }
-
-  .hljs-comment,
-  .hljs-quote {
-    color: #a0a1a7;
-    font-style: italic;
-  }
-
-  .hljs-doctag,
-  .hljs-formula,
-  .hljs-keyword {
-    color: #a626a4;
-  }
-
-  .hljs-deletion,
-  .hljs-name,
-  .hljs-section,
-  .hljs-selector-tag,
-  .hljs-subst {
-    color: #e45649;
-  }
-
-  .hljs-literal {
-    color: #0184bb;
-  }
-
-  .hljs-addition,
-  .hljs-attribute,
-  .hljs-meta-string,
-  .hljs-regexp,
-  .hljs-string {
-    color: #50a14f;
-  }
-
-  .hljs-built_in,
-  .hljs-class .hljs-title {
-    color: #c18401;
-  }
-
-  .hljs-attr,
-  .hljs-number,
-  .hljs-selector-attr,
-  .hljs-selector-class,
-  .hljs-selector-pseudo,
-  .hljs-template-variable,
-  .hljs-type,
-  .hljs-variable {
-    color: #986801;
-  }
-
-  .hljs-bullet,
-  .hljs-link,
-  .hljs-meta,
-  .hljs-selector-id,
-  .hljs-symbol,
-  .hljs-title {
-    color: #4078f2;
-  }
-
-  .hljs-emphasis {
-    font-style: italic;
-  }
-
-  .hljs-strong {
-    font-weight: bold;
-  }
-
-  .hljs-link {
-    text-decoration: underline;
-  }
-
-  .default {
-    padding: 40px 256px 0 52px;
-    max-width: 1080px;
-    min-width: 304px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  .coral-Body--M img {
-    margin-top: 16px;
-  }
-
-  pre > code.coral-Code--S {
-    border-radius: 4px;
-    background-color: rgba(80, 80, 80, 0.02);
-    border: 1px solid rgba(50, 50, 50, 0.05);
-    padding: 16px;
-  }
-
-  .coral--darkest pre > code.coral-Code--S {
-    background-color: rgba(200, 200, 200, 0.02);
-    border-color: rgba(239, 239, 239, 0.05);
-  }
-
-  code.coral-Code--S.coral-Well {
-    padding: 4px;
-    display: inline;
-  }
-
-  .coral-Table {
-    margin: 16px 0;
-  }
-
-  main {
-    min-height: calc(100vh - 64px);
-  }
-
-  main img {
-    max-width: 100%;
-  }
-
-  header {
-    position: absolute;
-    top: 0;
-    padding: 16px 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    overflow-y: auto;
-    z-index: 10;
-  }
-
-  header > div {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    padding: 0 16px;
-  }
-
-  header > div:first-child {
-    flex: 1;
-    margin-right: 64px;
-  }
-
-  .heading-anchors {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    padding: 16px;
-    box-sizing: border-box;
-    width: 256px;
-  }
-
-  .footer {
-    height: 64px;
-    margin: 0 24px;
-    overflow: auto;
-    white-space: nowrap;
-  }
-
-  .footer-rule,
-  .footer ul {
-    min-width: 600px;
-  }
-
-  .footer ul {
-    list-style: none;
-    padding: 5px 0;
-    margin: 0;
-    font-size: 11px;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .footer ul > li {
-    padding: 3px 0;
-    margin-right: 32px;
-  }
-
-  .footer ul > li:last-child {
-    margin-right: 0;
-  }
-
-  .footer ul > li a {
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 960px) {
-    .default {
-      padding-right: 24px;
-      padding-left: 24px;
-    }
-
-    .heading-anchors {
-      display: none;
-    }
-  }
-</style>
+<script async type="text/javascript" src="https://unpkg.com/@adobe/focus-ring-polyfill@0.1.5/index.js"></script>
