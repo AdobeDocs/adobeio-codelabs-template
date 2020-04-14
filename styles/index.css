@@ -17,7 +17,7 @@ html, body {
 
 #sideNav {
   height: 100%;
-  width: 256px;
+  width: 268px;
   box-sizing: border-box;
   padding-left: 24px;
   overflow: scroll;
@@ -27,12 +27,12 @@ html, body {
 }
 
 #menu {
-  width: 200px;
+  width: 220px;
   margin: 16px 0;
 }
 
 #viewer {
-  width: calc(100% - 256px);
+  width: calc(100% - 268px);
   height: 100%;
   position: absolute;
   top: 0;
@@ -67,7 +67,7 @@ html, body {
 }
 
 .logo h1 {
-  margin: 0 16px;
+  margin-left: 16px;
 }
 
 .nav-toggle-header {
@@ -81,12 +81,12 @@ html, body {
   z-index: 10;
 }
 
-.nav-toggle-header #navToggleAction {
+#navToggleAction {
   height: 36px;
   width: 36px;
   fill: currentColor;
   color: rgb(110, 110, 110);
-  left: 4px;
+  left: 8px;
   position: absolute;
   cursor: pointer;
 }

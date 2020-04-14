@@ -54,8 +54,8 @@
       const src = viewer.contentWindow.location.href;
       
       const step = Array.from(menu.getElementsByTagName('a')).find(item => item.href.replace('?src=/', '') === src);
-      if (!step.parentNode.classList.contains('is-selected')) {
-        step.parentNode.classList.add('is-selected');
+      if (!step.parentElement.classList.contains('is-selected')) {
+        step.parentElement.classList.add('is-selected');
       }
       
       history.replaceState({href: step.href}, '', step.href);
@@ -110,8 +110,8 @@
     const footer = doc.body.querySelector('footer');
     const main = doc.body.querySelector('main');
     
-    const spectrumify = (nodes, className) => {
-      nodes.split(',').forEach((name) => {
+    const spectrumify = (selectors, className) => {
+      selectors.split(',').forEach((name) => {
         for (const el of main.querySelectorAll(name)) {
           el.classList.add(...className.split(' '));
         }
@@ -170,7 +170,7 @@
       <nav class="header-item">
         <ul class="spectrum-Breadcrumbs">
           <li class="spectrum-Breadcrumbs-item">
-            <a class="spectrum-Breadcrumbs-itemLink" target="_parent" href="https://adobedocs.github.io/adobeio-codelabs">CodeLabs</a>
+            <a class="spectrum-Breadcrumbs-itemLink" target="_parent" href="https://adobedocs.github.io/adobeio-developers">Adobe I/O Developers</a>
             <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightSmall spectrum-Breadcrumbs-itemSeparator" focusable="false" aria-hidden="true">
               <path d="M5.5 4a.747.747 0 0 0-.22-.53C4.703 2.862 3.242 1.5 2.04.23A.75.75 0 1 0 .98 1.29L3.69 4 .98 6.71a.75.75 0 1 0 1.06 1.06l3.24-3.24A.747.747 0 0 0 5.5 4z"></path>
             </svg>
@@ -227,7 +227,7 @@
   
   window.onpopstate = (event) => {
     const step = Array.from(menu.getElementsByTagName('a')).find(item => item.href === event.state.href);
-    if (!step.parentNode.classList.contains('is-selected')) {
+    if (!step.parentElement.classList.contains('is-selected')) {
       step.click();
     }
   };
@@ -242,7 +242,7 @@
       // Update selection
       const selected = menu.querySelector('.is-selected');
       selected && selected.classList.remove('is-selected');
-      event.target.parentNode.classList.add('is-selected');
+      event.target.parentElement.classList.add('is-selected');
       
       // Update aria-current to reflect current page.
       const currentItem = menu.querySelector('[aria-current]');
