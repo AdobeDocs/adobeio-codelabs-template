@@ -2,13 +2,13 @@
   "title": "CodeLab title",
   "repository": "https://github.com/AdobeDocs/adobeio-codelabs-template",
   "navigation": [{
-    "title": "Lesson 1",
+    "title": "What you will build",
     "url": "/lessons/lesson1"
   }, {
-    "title": "Lesson 2",
+    "title": "Creating your app",
     "url": "/lessons/lesson2"
   }, {
-    "title": "Lesson 3",
+    "title": "Well done",
     "url": "/lessons/lesson3"
   }]
 }

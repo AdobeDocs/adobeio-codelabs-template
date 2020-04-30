@@ -1,5 +1,3 @@
-## Lesson 3
+## Well done
 
-Lesson 3 content
-
-![adobe](assets/adobe.png)
+You have successfully completed the codelab and learnt how to build a codelab.
