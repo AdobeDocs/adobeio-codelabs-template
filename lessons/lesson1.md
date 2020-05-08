@@ -1,10 +1,5 @@
-## What you will build
+## Lesson 1: Bootstrap
 
-An awesome app. 
-
-### Technical requirements
-
-* What you'll need
-* Setting up your environment
+Bootstrap your app.
 
 Next lesson: [Creating your app](lesson2.md)
